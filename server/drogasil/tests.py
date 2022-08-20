@@ -1,0 +1,9 @@
+from django.test import TestCase
+
+from drogasil.views import get_search_url
+
+
+class GetSearchUrl(TestCase):
+    def test_get_search_url(self):
+        url = get_search_url('https://any_url?term={term}', 'DORFLEX')
+        self.assertEqual(url, 'https://any_url?term=dorflex')
