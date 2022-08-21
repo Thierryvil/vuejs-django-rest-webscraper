@@ -1,0 +1,28 @@
+:root {
+  --background-color-nav : #d9d9d9;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Eloquia';
+}
+
+
+@font-face {
+  font-family: "Eloquia";
+  src: local("Eloquia"),   url(./fonts/EloquiaDisplay-ExtraBold.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "Urban Grotesk";
+  src: local("Urban Grotesk"),   url(./fonts/UrbanGroteskBold.otf) format("truetype");
+}
+
+.container {
+  width: 80%;
+}
