@@ -9,7 +9,7 @@ DROGASIL_API_SEARCH_URL = 'https://api-gateway-prod.drogasil.com.br/search/v2/st
 
 
 def get_search_url(url_api: str, term: str) -> str:
-    return url_api.format(term=term.lower())
+    return url_api.format(term=term.lower().strip())
 
 @api_view(['GET',])
 def search(request: Request) -> dict:
