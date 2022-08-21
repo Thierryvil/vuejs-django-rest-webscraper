@@ -5,13 +5,14 @@ const { fetchProducts } = useProductsStore();
 </script>
 
 <script lang="ts">
-export default {
+import { defineComponent } from "vue";
+export default defineComponent({
   data() {
     return {
       term: "",
     };
   },
-};
+});
 </script>
 
 <template>
