@@ -5,3 +5,14 @@ services:
     build: ./server
     ports:
       - "8000:8000"
+    command: gunicorn config.wsgi -b :8000
+
+  web:
+    container_name: web
+    build: ./web
+    ports:
+      - "5173:5173"
+    environment:
+      - PORT=5173
+    depends_on:
+      - server
