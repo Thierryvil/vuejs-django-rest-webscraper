@@ -5,4 +5,3 @@ services:
     build: ./server
     ports:
       - "8080:8080"
-    command: python manage.py migrate && gunicorn config.wsgi
