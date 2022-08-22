@@ -7,9 +7,9 @@
 
 ## Documentação
 
-[Frontend](https://link-da-documentação)
+[Frontend](https://github.com/Thierryvil/vuejs-django-rest-webscraper/blob/main/web/README.md)
 
-[Backend](https://link-da-documentação)
+[Backend](https://github.com/Thierryvil/vuejs-django-rest-webscraper/blob/main/server/README.md)
 
 
 ## Stack utilizada
