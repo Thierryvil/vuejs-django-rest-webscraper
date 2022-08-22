@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  server:
+    container_name: server
+    build: ./server
+    ports:
+      - "8080:8080"
+    command: python manage.py migrate && gunicorn config.wsgi
